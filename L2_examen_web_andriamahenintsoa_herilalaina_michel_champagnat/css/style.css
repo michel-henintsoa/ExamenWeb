@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* background-color: black; */
+}
+* a{
+    text-decoration: none;
+    color: black;
+}
+body{
+    overflow-x: hidden;
+    display: block;
+}
+.background-clip{
+    position: fixed;
+    background-color: #6e6e6e;
+    width: 50%;
+    height: 100vh;
+    right: 0;
+    z-index: -9999;
+    top: 0;
+    font-size: 2em;
+}
+main{
+    margin-top: 6em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    /* position: relative; */
+    justify-content: space-around;
+    margin-inline: 2em;
+}
+main form{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+}
+/* main form input, select{
+    margin: 1em;
+    height: 2em;
+    padding-inline: 1em;
+    width: fit-content;
+} */
+/* .grid-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+} */
+main #addbook form .form-div{
+    display: flex;
+    flex-direction: column;
+}
+main #addbook form .form-div textarea{
+    height: 5em;
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical; 
+}
+
+/* Responsivité */
+@media (max-width : 500px) {
+    main{
+        margin-top: 15em;
+    }
+}

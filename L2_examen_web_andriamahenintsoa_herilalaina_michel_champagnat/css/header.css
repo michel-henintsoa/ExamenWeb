@@ -1,0 +1,59 @@
+header{
+    position: fixed;
+    backdrop-filter: blur(10px);
+    top: 0;
+    height: 5em;
+}
+header nav{
+    width: 100vw;
+    height: max-content;
+    padding: 1em;
+    padding-left: 5%;
+    padding-right: 5%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    position: relative;
+    justify-content: space-around;
+    z-index: 99999;
+    backdrop-filter: blur(10px);
+}
+header nav .logo{
+    font-size: 3em;
+}
+header nav .nav-acceuil{
+    display: flex;
+    list-style: none;
+    flex-wrap: nowrap;
+}
+header nav .nav-acceuil li{
+    margin-inline: 1em;
+}
+header nav .nav-acceuil #sommaire{
+    position: absolute;
+    backdrop-filter: blur(100px);
+    padding: 1em;
+    border-radius: 7px;
+}
+header nav .nav-acceuil li details:hover{
+    cursor: pointer;
+    backdrop-filter: blur(100px);
+}
+header nav .nav-acceuil li details ul{
+    position: absolute;
+
+}
+
+/* Responsivité */
+@media (max-width : 500px) {
+    header nav .nav-acceuil{
+        flex-wrap: wrap;
+    }
+    header nav .nav-acceuil li{
+        margin: 1em;
+    }
+    header nav .logo{
+        display: none;
+    }
+}

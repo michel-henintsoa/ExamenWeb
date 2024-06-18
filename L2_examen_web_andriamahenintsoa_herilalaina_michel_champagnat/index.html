@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/stylelist.css">
+    
+</head>
+<body>
+    <div class="background-clip"></div>
+    <header>
+        
+        <nav>
+            <ul class="nav-acceuil">
+                <li>Acceuil</li>
+                <li>
+                    <details>
+                        <summary>Categorie</summary>
+                        <ul id="sommaire">
+                            <li>Band Dessinée</li>
+                            <li>Biblio verte</li>
+                            <li>Harle Quin</li>
+                            <li>Harry Poter</li>
+                            <li>Jungle</li>
+                            <li>Dino</li>
+                            <li>L'alchimiste</li>
+                            <li>Science Fiction</li>
+                            <li>Thriller</li>
+                        </ul>
+                    </details>
+                </li>
+                <li><a href="#addbook">Ajout de livre</a></li>
+                <li><a href="#list-book">Liste des livres</a></li>
+            </ul>
+            <div class="logo">
+                Book
+            </div>
+        </nav>
+        <hr>
+    </header>
+    <main>
+        
+        <label for="list-book">Liste des Livres :</label>
+        <div>
+            <input type="text" name="" id="recherche"><input type="submit" value="Recherche" id="butsearch">
+        </div>
+        <div id="list-book"></div>
+        <label for="details-book">Details Sur les livres :</label>
+        <div id="details-book"></div>
+        <label for="addbook">Ajout de livre</label>
+        <div id="addbook">
+            <form id="formAdd">
+                <div class="form-div">
+                    <label for="title">Titre :</label>
+                    <input type="text" name="titre" id="titre" required>
+                    <label for="author">Auteur</label>
+                    <input type="text" name="auteur" id="author" required>
+                    <label for="image">Couverture : </label>
+                    <input type="file" name="image" id="image">
+                    <label for="editor">Editeur : </label>
+                    <input type="text" name="editeur" id="editor" required>
+                    <label for="genre">Genre</label>
+                    <input type="text" name="genre" id="genre" required>
+                    <label for="resume">Résumé : </label>
+                    <textarea id="resume" name="resume" rows="4" cols="50" placeholder="Le resumé..." required></textarea>
+                    <label for="langue">Langue d'ecriture : </label>
+                    <input type="text" name="langue" id="langue" required>
+                </div>
+                
+                <div class="form-div">
+                    <label for="datePublication">Date de Publication</label>
+                    <input type="date" name="date" id="date" required>
+                    <label for="pages">Nombre de pages : </label>
+                    <input type="number" name="pages" id="pages" required>
+                    <label for="disp">Disponibilité</label>
+                    <select name="disp" id="disp">
+                        <option value="true" selected>Disponible</option>
+                        <option value="false">Indisponible</option>
+                    </select>
+                    <label for="etat">Etat du livre : </label>
+                    <select name="etat" id="etat">
+                        <option value="Bonne" selected>Bonne</option>
+                        <option value="Endomagé">Endomagé</option>
+                    </select>
+                    <label for="emplacement">Emplacement</label>
+                    <select name="emplacement" id="emplacement">
+                        <option value="Reservé">Reservé</option>
+                        <option value="Non Reservé">Non reservé</option>
+                    </select>
+                </div>
+                
+
+                <br><br>
+                <input type="submit" value="Ajouter">
+            </form>
+        </div>
+    </main>
+    <footer>
+        <!-- <hr> -->
+        <div>
+            <hr>
+            <br><br>
+            À propos :
+            <br>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt consectetur deserunt, ex rem recusandae dolores porro harum. Numquam sint consectetur quos perspiciatis officiis expedita voluptate, quisquam error soluta incidunt? Velit.
+            </p>
+            <br><br>
+            <hr>
+        </div>
+    </footer>
+    <script src="js/tous.js"></script>
+    
+</body>
+</html>

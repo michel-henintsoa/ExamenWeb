@@ -1,0 +1,56 @@
+{
+    "livre1": [
+        {
+            "titre" : "1984",
+            "auteur" : ["George Orwell"],
+            "isbn" : "978-207-036822-8",
+            "image" : "img L2/bd3.jpg",
+            "editeur" : "Gallimard",
+            "datePublication" : "1949",
+            "genre" : "Dystopie, science-fiction",
+            "resume" : "Un homme lutte contre un régime totalitaire oppressif dans un monde dystopique.",
+            "langue" : "Francais",
+            "nombrePages" : 368,
+            "disponibil" : false,
+            "etat" : "Endromagé",
+            "emplacement" : "Réserves"
+        }
+        
+    ],
+    "livre2": [
+        {
+            "titre" : "livre2",
+            "auteur" : ["le Grand", "le Petit"],
+            "isbn" : "978-207-036822-8",
+            "image" : "img L2/jungle2.jpg",
+            "editeur" : "vsCode",
+            "datePublication" : "2021",
+            "genre" : "Action, horreur",
+            "resume" : "un homme cré un programme qui pourais controler l'esprit des gens, créant des zombie à moitier vivant",
+            "langue" : "Francais",
+            "nombrePages" : 36,
+            "disponibil" : true,
+            "etat" : "Bonne",
+            "emplacement" : " non Réserves"
+        }
+        
+    ],
+    "livre3": [
+        {
+            "titre" : "livre3",
+            "auteur" : ["la Petite"],
+            "isbn" : "978-207-036822-8",
+            "image" : "img L2/science fiction1.jpg",
+            "editeur" : "Geany",
+            "datePublication" : "2024",
+            "genre" : "science-fiction, drame, amour",
+            "resume" : "la petite est une scientifique ayant perdue son ami d'enfance et veux le reconstituer par le pouvoir de la science.",
+            "langue" : "Francais",
+            "nombrePages" : 501,
+            "disponibil" : false,
+            "etat" : "Bonne",
+            "emplacement" : "Réserves"
+        }
+        
+    ]
+}
